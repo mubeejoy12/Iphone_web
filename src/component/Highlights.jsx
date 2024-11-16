@@ -1,0 +1,19 @@
+    <section
+      id="highlight"
+      className="w-full overflow-hidden h-full common-padding bg-zinc"
+    >
+      <div className="screen-max-width">
+        <div className="mb-12 w-full items-end md:flex justify-between">
+          <h1 id="title" className="section-heading">
+            Get the highlights.
+          </h1>
+          <div className="flex flex-wrap  items-end gap-5">
+            <p className="link">
+              watch the film <img src={watchImg} alt="watch" className="ml-2" />
+            </p>
+            <p className="link">
+              watch the event{" "}
+              <img src={rightImg} alt="right" className="ml-2" />
+            </p>
+          </div>
+        </div>
