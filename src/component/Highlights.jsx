@@ -1,3 +1,10 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import React from "react";
+import { rightImg, watchImg } from "../utils";
+import VideoCarousel from "./VideoCarousel";
+
+const Highlights = () => {
   useGSAP(() => {
     gsap.to("#title", {
       opacity: 1,
@@ -10,6 +17,7 @@
       stagger: 0.25,
     });
   }, []);
+  return (
     <section
       id="highlight"
       className="w-full overflow-hidden h-full common-padding bg-zinc"
@@ -29,3 +37,11 @@
             </p>
           </div>
         </div>
+
+        <VideoCarousel/>
+      </div>
+    </section>
+  );
+};
+
+export default Highlights;
