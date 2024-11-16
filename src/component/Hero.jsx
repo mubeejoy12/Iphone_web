@@ -19,3 +19,14 @@ import { heroVideo, smallHeroVideo } from "../utils";
     return () => {
       window.removeEventListener("resize", handleVideosrc);
     };
+  useGSAP(() => {
+    gsap.to("#hero", {
+      opacity: 1,
+      delay: 1.5,
+    });
+    gsap.to("#cta", {
+      opacity: 1,
+      y: -50,
+      delay: 2,
+    });
+  }, []);
