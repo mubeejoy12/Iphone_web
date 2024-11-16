@@ -6,7 +6,7 @@ import Model from "./component/Model";
 function App() {
   return (
     <main className="bg-black">
-      <Navbar /> <Hero /> <HighLights />
+      <Navbar /> <Hero /> <HighLights /> <Model />
     </main>
   );
 }
