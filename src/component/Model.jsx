@@ -9,6 +9,9 @@ import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
 import { models, sizes } from "../constant";
 import { animateWithGsapTimeline } from "../utils/animatioons";
+// import { models, sizes } from "../constants";
+// import { animateWithGsapTimeline } from "../utils/animations";
+
 const Model = () => {
   const [size, setSize] = useState('small');
   const [model, setModel] = useState({
@@ -16,6 +19,7 @@ const Model = () => {
     color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
     img: yellowImg,
   })
+
   // camera control for the model view
   const cameraControlSmall = useRef();
   const cameraControlLarge = useRef();
@@ -27,6 +31,7 @@ const Model = () => {
   // rotation
   const [smallRotation, setSmallRotation] = useState(0);
   const [largeRotation, setLargeRotation] = useState(0);
+
   const tl = gsap.timeline();
 
   useEffect(() => {
@@ -48,6 +53,8 @@ const Model = () => {
   useGSAP(() => {
     gsap.to('#heading', { y: 0, opacity: 1 })
   }, []);
+
+  return (
     <section className="common-padding">
       <div className="screen-max-width">
         <h1 id="heading" className="section-heading">
@@ -116,3 +123,5 @@ const Model = () => {
     </section>
   )
 }
+
+export default Model
