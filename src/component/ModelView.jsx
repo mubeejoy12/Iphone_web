@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import * as THREE from "three";
 import Lights from "./Light";
 import Loader from "./Loader";
-import IPhone from "./IPhone";
+import IPhone from './IPhone.jsx';
 
 
 const ModelView = ({
